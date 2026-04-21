@@ -1,5 +1,7 @@
 # CS1 Course Structure Overview
 
+**Student / admin one-pagers:** [CS1-course-structure.md](../CS1-course-structure.md) · [CS1-checkpoints.md](../CS1-checkpoints.md) · [CS1-minimum-passing-standard.md](../CS1-minimum-passing-standard.md) · [commit-message-guide.md](../commit-message-guide.md)
+
 Official KLIS school calendar (2026–2027): [KLIS-School-Calendar-26-27.pdf](./KLIS-School-Calendar-26-27.pdf).
 
 Semester 1 week-by-week pacing (draft): [cs1-pacing-guide.md](./cs1-pacing-guide.md).

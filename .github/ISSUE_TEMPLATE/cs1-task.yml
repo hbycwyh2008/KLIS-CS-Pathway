@@ -1,0 +1,51 @@
+name: CS1 task
+description: Track coursework, bugs, or implementation tasks for CS1 projects.
+title: "[task] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for **actionable** work (bug, feature slice, homework step).
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this task is done?
+      placeholder: e.g. Dice Challenge shows sum of two dice after each roll.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps / acceptance criteria
+      description: Checklist or bullets another person can verify.
+      placeholder: |
+        - [ ] Roll button updates DOM
+        - [ ] Sum displays under the dice
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Related module (if any)
+      options:
+        - "N/A"
+        - "Module 1 — GitHub"
+        - "Module 2 — HCI / Figma"
+        - "Module 3 — LaTeX"
+        - "Module 4–5 — Login page"
+        - "Module 6 — Dice Challenge"
+        - "Module 7 — Next.js"
+        - "Module 8 — FastAPI"
+        - "Module 9 — PostgreSQL"
+        - "Module 10 — Final"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / links
+      description: Branch name, PR link, screenshot, error message, etc.
+    validations:
+      required: false
