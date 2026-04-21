@@ -1,75 +1,76 @@
 # CS1 Checkpoints (student tick list)
 
-Tick each item when **done and reviewed** (self, peer, or teacher). Full course text: [03-syllabus-schedule/cs1-course-structure-overview.md](./03-syllabus-schedule/cs1-course-structure-overview.md).
+Aligned with [CS1-course-structure.md](./CS1-course-structure.md). Full rubric detail: [03-syllabus-schedule/cs1-course-structure-overview.md](./03-syllabus-schedule/cs1-course-structure-overview.md).
 
 ---
 
 ## Module 1 — GitHub Foundations
 
-- [ ] Clone a repository using GitHub Desktop
-- [ ] Make a change and commit it
-- [ ] Push changes to GitHub
-- [ ] Pull updates from GitHub
-- [ ] Create a branch
-- [ ] Open a pull request
+- [ ] Clone a repository
+- [ ] Make one change
+- [ ] Commit and push
+- [ ] Create one branch
+- [ ] Submit one pull request
 
 ---
 
 ## Module 2 — HCI and Figma
 
-- [ ] Conduct one interview
-- [ ] Create one short survey
-- [ ] Complete one heuristic evaluation of an existing interface
-- [ ] Build one Figma prototype
-- [ ] Explain design decisions using design principles
+- [ ] One interview
+- [ ] One survey
+- [ ] One heuristic evaluation
+- [ ] One Figma prototype
+- [ ] One short design rationale
 
 ---
 
-## Module 3 — LaTeX for Technical Communication
+## Module 3 — LaTeX
 
-- [ ] Create a one-page LaTeX document
-- [ ] Use title, section, bullet points, and one image or code example
-
----
-
-## Module 4 — HTML / CSS / Bootstrap (login page)
-
-- [ ] Build a **responsive login page** using HTML, CSS, and Bootstrap (heading, username/email, password, submit; readable layout)
+- [ ] One-page LaTeX document
 
 ---
 
-## Module 5 — Grid and Flexbox (same login page)
+## Module 4 — HTML / CSS / Bootstrap
 
-- [ ] **Refine** the login page using **Bootstrap Grid and Flexbox** together (clear use of rows/columns **and** flex alignment in the composition)
-
----
-
-## Module 6 — JavaScript DOM (Dice Challenge)
-
-- [ ] Working **Dice Challenge**: user action triggers random rolls; results are visible in the DOM; at least one control beyond a single “roll” button (e.g. reset, dice count, or total sum display)
+- [ ] Responsive login page
 
 ---
 
-## Module 7 — Next.js Frontend
+## Module 5 — Layout with Grid and Flexbox
 
-- [ ] Create a multi-page Next.js app
-- [ ] Build components and render data on a page
-- [ ] Submit form data from the frontend
-
----
-
-## Module 8 — FastAPI Backend
-
-- [ ] Build CRUD endpoints for books
+- [ ] One page section using Bootstrap Grid
+- [ ] One page section using Flexbox
 
 ---
 
-## Module 9 — PostgreSQL Integration
+## Module 6 — JavaScript DOM
+
+- [ ] Add interactivity to a form-based page
+
+---
+
+## Module 7 — Next.js
+
+- [ ] Multi-page frontend
+- [ ] Reusable components
+- [ ] One form
+- [ ] One API fetch
+- [ ] One frontend submission
+
+---
+
+## Module 8 — FastAPI
+
+- [ ] CRUD endpoints for books
+
+---
+
+## Module 9 — PostgreSQL
 
 - [ ] Connect the book project backend to PostgreSQL
 
 ---
 
-## Module 10 — Final Course Outcome
+## Module 10 — Final Project
 
-- [ ] Complete and present the final book project
+- [ ] Final project presentation

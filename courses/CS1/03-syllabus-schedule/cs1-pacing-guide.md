@@ -36,8 +36,8 @@ Some schools advance A/B **only on days students attend**. That can **diverge** 
 | Phase | S1 weeks (approx.) | Modules | Book project thread |
 |------|-------------------|---------|---------------------|
 | Setup & design | 1–5 (+ holiday week 6) | 1–3 | Choose project scope; capture needs; write short rationale |
-| Static web | 7–10 | 4–5 | **Login page** (static → grid/flex refined); book list deferred to Next |
-| Client interactivity | 11–14 | 6 | **Dice Challenge** (vanilla JS DOM); optional login stretch |
+| Static web | 7–10 | 4–5 | Static **login page** (M4); **grid + flex sections** on project UI (M5) |
+| Client interactivity | 11–14 | 6 | **Form-based JS** (interactive login or content section) |
 | Application frontend | 15–17 | 7 | Next.js book UI; list/detail/forms |
 | Backend & data | 20–21 | 8–9 | FastAPI CRUD; PostgreSQL persistence |
 | Integration & close | 22 | 10 | Full stack demo + design/tech explanation |
@@ -65,11 +65,11 @@ Weeks **18–19** are **winter break** (no classes): optional async polish or ca
 | 7 | 2026-10-05 – 2026-10-09 | 5 | 3 | 2 | Return from holiday | **3** LaTeX + **4** start | One-page LaTeX (title, sections, list, image or code); HTML skeleton | **M3 task:** short design rationale or summary in LaTeX |
 | 8 | 2026-10-12 – 2026-10-16 | 5 | 2 | 3 | | **4** HTML / CSS / Bootstrap | Semantic structure; Bootstrap basics; build **static login page** shell | Static **login page** structure (single-page deliverable) |
 | 9 | 2026-10-19 – 2026-10-23 | 5 | 3 | 2 | | **4** HTML / CSS / Bootstrap | Responsive login; utilities; readability; form controls | **M4 checkpoint:** responsive **login page** |
-| 10 | 2026-10-26 – 2026-10-30 | 5 | 2 | 3 | **2026-10-31** Halloween event (calendar) | **5** Grid / Flexbox | On the **same login page**: 12-column grid + flex (center panel, columns, optional header/footer strip) | **M5 checkpoint:** login page shows **both** grid and flex in the composition |
-| 11 | 2026-11-02 – 2026-11-06 | 4 | 2 | 2 | **2026-11-03** Q1 / progress report; **2026-11-06** PTC (no school) | **5** → **6** | Final **login page** layout polish; introduce **Dice Challenge** spec + DOM queries / one button roll | One die rolls **1–6** and updates the page |
-| 12 | 2026-11-09 – 2026-11-13 | 5 | 2 | 3 | | **6** JavaScript DOM | Multiple dice or **sum**; reset; basic UI state | **Dice Challenge** core behavior stable |
-| 13 | 2026-11-16 – 2026-11-20 | 5 | 3 | 2 | | **6** JavaScript DOM | Validation (dice count), history or disabled “rolling” state; show/hide | **M6 checkpoint:** meets **minimum scope** in [course overview](../03-syllabus-schedule/cs1-course-structure-overview.md) Module 6 |
-| 14 | 2026-11-23 – 2026-11-27 | 3 | 1 | 2 | **Thanksgiving** (Thu–Fri off per calendar) | **6** (catch-up) → **7** preview | Polish Dice UI; buffer; optional Next.js setup video | Dice Challenge **submitted** or final fixes |
+| 10 | 2026-10-26 – 2026-10-30 | 5 | 2 | 3 | **2026-10-31** Halloween event (calendar) | **5** Grid / Flexbox | Build **one Bootstrap Grid section** + **one Flexbox section** on the project UI | **M5 checkpoint:** grid section + flex section both visible |
+| 11 | 2026-11-02 – 2026-11-06 | 4 | 2 | 2 | **2026-11-03** Q1 / progress report; **2026-11-06** PTC (no school) | **5** → **6** | Integrate layout into project pages; introduce DOM selection + **form** events | **Structured layout** deliverable shaping up |
+| 12 | 2026-11-09 – 2026-11-13 | 5 | 2 | 3 | | **6** JavaScript DOM | Event listeners; read inputs; update text/styles on **form-based page** | Interactivity on **login** or assigned content section |
+| 13 | 2026-11-16 – 2026-11-20 | 5 | 3 | 2 | | **6** JavaScript DOM | Simple validation; show/hide messages | **M6 checkpoint:** interactive **form-based** page works end-to-end |
+| 14 | 2026-11-23 – 2026-11-27 | 3 | 1 | 2 | **Thanksgiving** (Thu–Fri off per calendar) | **6** (catch-up) → **7** preview | Polish JS UX; buffer; optional Next.js setup video | M6 deliverable **submitted** or final fixes |
 | 15 | 2026-11-30 – 2026-12-04 | 5 | 3 | 2 | | **7** Next.js | `create-next-app`; pages routing; components; props | Next shell mirroring static pages |
 | 16 | 2026-12-07 – 2026-12-11 | 5 | 2 | 3 | | **7** Next.js | Forms; `fetch` to API (mock or live); render lists | Book list page from API (mock OK early) |
 | 17 | 2026-12-14 – 2026-12-18 | 5 | 3 | 2 | **2026-12-18** Christmas & New Year event (**early release**) | **7** Next.js | Submit data to backend; error states; loading | **M7 checkpoint:** multi-page app + form submit path |
@@ -85,7 +85,7 @@ Weeks **18–19** are **winter break** (no classes): optional async polish or ca
 
 1. **LaTeX:** Keep a **single one-pager** template; drop extra LaTeX features beyond Module 3 checkpoint.  
 2. **HCI breadth:** Require **one** strong interview **or** pair survey + mini heuristic; do not require all three at equal depth.  
-3. **Pre-Next static work:** Keep static work **login-centric** (Modules 4–5); defer book list/detail pages to **Next.js** unless you explicitly add stretch scope.  
+3. **Pre-Next static work:** M4 focuses on the **login page**; M5 adds **grid + flex sections** to the broader project UI—avoid scope creep into a full multi-page static site before **Next.js**.  
 4. **Next.js depth:** Restrict to an agreed subset (e.g. fixed routing pattern, one data-fetch pattern).  
 5. **Database:** Start FastAPI week with **in-memory** store, swap to Postgres only after routes pass smoke tests (matches Module 8 → 9 split).
 

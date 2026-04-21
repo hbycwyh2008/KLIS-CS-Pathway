@@ -34,26 +34,25 @@ Students are expected to build structured webpages, create responsive layouts, a
 
 ---
 
-## 2. Layout: Bootstrap Grid and Flexbox (login page)
+## 2. Layout: Bootstrap Grid and Flexbox
 
-- [ ] Can use the Bootstrap 12-column grid system to organize the **login page** layout (e.g. columns for branding vs form, or content width)
-- [ ] Can place content into rows and columns correctly on that page
-- [ ] Can use Flexbox for horizontal alignment on the login page
-- [ ] Can use Flexbox for vertical alignment (e.g. centering the login panel)
-- [ ] Can use Flexbox for spacing and centering of inner elements
-- [ ] Can choose Grid vs Flexbox appropriately for different parts of the **same** login page
+- [ ] Can use the Bootstrap 12-column grid system for at least **one** page section
+- [ ] Can place content into rows and columns correctly in that section
+- [ ] Can use Flexbox for horizontal alignment in at least **one** page section
+- [ ] Can use Flexbox for vertical alignment, spacing, and centering where appropriate
+- [ ] Can choose Grid vs Flexbox appropriately for each section’s layout needs
 
 ---
 
-## 3. JavaScript DOM Manipulation (Dice Challenge)
+## 3. JavaScript DOM Manipulation
 
 - [ ] Can select DOM elements using JavaScript
-- [ ] Can respond to button clicks and other user actions (e.g. roll, reset)
-- [ ] Can read input values from a form or control (e.g. number of dice)
-- [ ] Can update text or content dynamically to show dice results (1–6 per die)
+- [ ] Can respond to button clicks and other user actions
+- [ ] Can read input values from a form
+- [ ] Can update text or content dynamically
 - [ ] Can change styles or classes dynamically based on state (optional but encouraged)
-- [ ] Can show or hide content (e.g. history panel, error message)
-- [ ] Can implement a working **Dice Challenge** page: roll → random outcome(s) → visible DOM update; includes at least **two** features from: multiple dice, **sum**, **reset**, validated dice count, **history**, or disabled state during roll
+- [ ] Can show or hide content (e.g. error message, help text)
+- [ ] Can add interactivity to a **form-based page** (e.g. interactive login page or interactive content section), including simple validation
 
 ---
 
@@ -91,8 +90,8 @@ Students are expected to build structured webpages, create responsive layouts, a
 By the end of CS1, students should be able to build a simple full-stack web application that includes:
 
 - [ ] A structured frontend page
-- [ ] Responsive **login page** layout using Bootstrap Grid and Flexbox
-- [ ] JavaScript-based interactivity (e.g. Dice Challenge skills applied in the app)
+- [ ] Responsive layout using Bootstrap Grid and Flexbox appropriately
+- [ ] JavaScript-based interactivity
 - [ ] A Next.js frontend
 - [ ] A FastAPI backend
 - [ ] CRUD functionality in a book project

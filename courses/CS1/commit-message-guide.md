@@ -1,5 +1,7 @@
 # Commit message guide (CS1)
 
+Course-level expectations also appear in [CS1-course-structure.md §4](./CS1-course-structure.md#4-suggested-github-requirements).
+
 Good commits help you, your teammates, and your teacher **review PRs** and **find bugs later**.
 
 ---

@@ -1,6 +1,7 @@
 # CS1 Course Structure Overview
 
-**Student / admin one-pagers:** [CS1-course-structure.md](../CS1-course-structure.md) · [CS1-checkpoints.md](../CS1-checkpoints.md) · [CS1-minimum-passing-standard.md](../CS1-minimum-passing-standard.md) · [commit-message-guide.md](../commit-message-guide.md)
+**Student / admin:** [CS1-course-structure.md](../CS1-course-structure.md) (canonical module specs) · [CS1-checkpoints.md](../CS1-checkpoints.md) · [CS1-minimum-passing-standard.md](../CS1-minimum-passing-standard.md) · [commit-message-guide.md](../commit-message-guide.md)  
+This file keeps **extended Evidence of Mastery** and implementation notes; align checkpoints with **CS1-course-structure.md** when the two differ.
 
 Official KLIS school calendar (2026–2027): [KLIS-School-Calendar-26-27.pdf](./KLIS-School-Calendar-26-27.pdf).
 
@@ -18,17 +19,16 @@ Projects mapped to each module (板块 ↔ 项目): [cs1-projects-by-module.md](
 
 ### Checkpoint
 
-- Clone a repository using GitHub Desktop
-- Make a change and commit it
-- Push changes to GitHub
-- Pull updates from GitHub
-- Create a branch
-- Open a pull request
+- Clone a repository
+- Make one change
+- Commit and push
+- Create one branch
+- Submit one pull request
 
 ### Project Task
 
-- Create a personal repository and publish at least one update
-- Complete one branch-based contribution and submit one pull request
+- One personal repository update
+- One branch-based contribution with PR
 
 ### Evidence of Mastery
 
@@ -42,36 +42,34 @@ Projects mapped to each module (板块 ↔ 项目): [cs1-projects-by-module.md](
 
 ### Skills
 
-- Understand the purpose of needfinding
-- Conduct interview, survey, and heuristic evaluation
-- Critically evaluate an **existing** interface (app or website) and identify concrete usability problems
-- Propose **targeted UI improvements** grounded in findings (not only greenfield concepts)
-- Create a basic prototype in Figma
-- Apply core design principles
+- Explain the purpose of needfinding
+- Conduct an interview; design a short survey; perform a heuristic evaluation
+- Identify user needs and usability issues
+- Create a prototype in Figma; explain design decisions using design principles
 - Recognize basic biases in research and design
+- *(Optional extension)* Critically evaluate an **existing** interface and propose targeted UI improvements (redesign track)
 
 ### Checkpoint
 
-- Conduct one interview
-- Create one short survey
-- Complete one heuristic evaluation of an existing interface
-- Build one Figma prototype
-- Explain design decisions using design principles
+- One interview
+- One survey
+- One heuristic evaluation
+- One Figma prototype
+- One short design rationale
 
 ### Project Task
 
-**Choose one track (unless you assign both at reduced depth):**
-
-- **Track A — Course project (Book):** Investigate a user need related to the book project; create and revise a Figma prototype based on findings.
-- **Track B — Redesign existing UI:** Pick a **real** product or flow (existing screens). Document the **current state**, run a **heuristic evaluation** (and light needfinding such as interview or survey if required), then produce a **Figma redesign** of the **key screens** that addresses the top issues—with short rationale tied to design principles.
+- HCI research summary
+- Prototype draft
+- Revision based on findings
 
 ### Evidence of Mastery
 
 - Student can identify user needs and usability issues
 - Student can create a prototype in Figma
-- Student can explain design decisions clearly
-- Student can identify possible bias in questions, assumptions, or design choices
-- For **Track B**, student can show **before → after** intent (screenshots or linked reference of the current UI vs Figma) and justify **why** changes improve usability
+- Student can explain design decisions clearly (alignment, contrast, consistency, hierarchy, spacing)
+- Student can identify possible bias (e.g. leading questions, sampling bias, designer assumptions, confirmation bias)
+- Redesign track (if assigned): **before → after** intent with rationale tied to design principles
 
 ---
 
@@ -128,63 +126,52 @@ Projects mapped to each module (板块 ↔ 项目): [cs1-projects-by-module.md](
 
 ---
 
-## Module 5. Layout with Grid and Flexbox — Same Login Page (refined)
+## Module 5. Layout with Grid and Flexbox
 
 ### Skills
 
-- Use the Bootstrap **12-column grid** on the **same login page** (e.g. split branding vs form, or main column + side margin)
-- Use **Flexbox** for vertical and horizontal alignment, spacing, and centering (e.g. full-viewport centering of a card, footer row)
-- Choose Grid vs Flexbox **for parts of the login experience** based on layout needs
+- Use the Bootstrap **12-column grid** system; place content into rows and columns correctly
+- Use **Flexbox** for alignment, spacing, and centering
+- Choose Grid vs Flexbox appropriately for each section
 
 ### Checkpoint
 
-- **Refine** the login page using **Bootstrap Grid and Flexbox** together (clear use of rows/columns **and** flex alignment in the composition)
+- One page section using **Bootstrap Grid**
+- One page section using **Flexbox**
 
 ### Project Task
 
-- **Upgrade** the Module 4 login page: polished responsive layout using grid + flex (optional: simple header/footer strip, “hero” branding column, or card panel—still **one login-focused page**)
+- Structured layout for the **project interface** (builds on the Module 4 static page)
 
 ### Evidence of Mastery
 
-- Rows and columns are used correctly on the login page
-- Flexbox is used appropriately (centering, distribution, or component alignment)
-- The **same** login page is visually organized and responsive; scope stays login-centric rather than a separate multi-page marketing site
+- At least one clearly identifiable **grid-based** section (rows/columns used correctly)
+- At least one clearly identifiable **flex-based** section (alignment / spacing / centering)
+- Overall layout is readable and responsive across viewports
 
 ---
 
-## Module 6. JavaScript DOM Manipulation — Dice Challenge
-
-Use a small **Dice Challenge** app (single page, vanilla JS) so students practice DOM and events on a **bounded** UI before Next.js.
+## Module 6. JavaScript DOM Manipulation
 
 ### Skills
 
-- Select DOM elements and update content safely
-- Add event listeners (e.g. roll, reset, change number of dice)
-- Read input values (e.g. how many dice, optional rules)
-- Change text and styles based on program state
-- Show and hide content or toggle UI states (e.g. history panel, error messages)
-- Perform simple validation (e.g. valid range for dice count)
+- Select DOM elements; add event listeners; read input values
+- Change text or styles; show or hide elements
+- Implement simple form validation
 
 ### Checkpoint
 
-- Working **Dice Challenge**: user action triggers random rolls; results are visible in the DOM; at least one control beyond a single “roll” button (e.g. reset, dice count, or total sum display)
+- Add interactivity to a **form-based page**
 
 ### Project Task
 
-- Build and submit a **Dice Challenge** page that meets **minimum scope** (adjust for your rubric):
-
-  - **Roll** at least one die (values **1–6**) and **display** each outcome in the page (text or simple graphics)
-  - Use **JavaScript only** (no framework) to update the DOM
-  - Include **at least two** of: multiple dice, **sum** of faces, **reset**, configurable **number of dice** (with validation), short **roll history**, or disabled button while “rolling”
-
-- **Stretch (optional):** apply the same DOM patterns to the **Module 4–5 login page** (e.g. client-side validation message)—not required if Dice Challenge is the sole graded artifact
+- **Interactive login page** or **interactive content section** (vanilla JavaScript; no framework)
 
 ### Evidence of Mastery
 
 - Student can manipulate webpage content with JavaScript in response to user actions
-- Event handling works correctly without breaking the page on repeated clicks
-- State (last roll, sum, dice count, etc.) is reflected clearly in the UI
-- Student can explain briefly how random values map to DOM updates
+- Event handling works correctly for repeated use
+- DOM scope demonstrated: selection, click/input events, dynamic updates, simple validation
 
 ---
 
@@ -192,18 +179,17 @@ Use a small **Dice Challenge** app (single page, vanilla JS) so students practic
 
 ### Skills
 
-- Create a basic Next.js project
-- Use page-based routing
-- Create reusable components
-- Pass data through props
-- Build forms
-- Fetch and render backend data
+- Create a basic Next.js project; build multiple pages; use page-based routing
+- Create reusable components; pass data through props; build forms
+- Fetch data from an API; render API data; submit frontend data to the backend
 
 ### Checkpoint
 
-- Create a multi-page Next.js app
-- Build components and render data on a page
-- Submit form data from the frontend
+- Multi-page frontend
+- Reusable components
+- One form
+- One API fetch
+- One frontend submission
 
 ### Project Task
 
@@ -214,6 +200,10 @@ Use a small **Dice Challenge** app (single page, vanilla JS) so students practic
 - Student can build and organize multiple frontend pages
 - Student can use components appropriately
 - Student can connect frontend pages to API data
+
+### Not required yet
+
+- Advanced authentication; deep SSR/SSG comparison; middleware; advanced global state libraries
 
 ---
 
@@ -266,18 +256,22 @@ Use a small **Dice Challenge** app (single page, vanilla JS) so students practic
 - Student can explain the basic data model
 - Student understands how backend endpoints connect to the database
 
+### Not required yet
+
+- Advanced joins; indexing optimization; deep transaction or normalization theory
+
 ---
 
 ## Module 10. Final Course Outcome
 
 ### Skills
 
-- Combine design, frontend, backend, database, and collaboration workflow
-- Build a simple full-stack web application
+- Combine design, frontend, backend, database, and GitHub workflow
+- Explain both **design** and **technical** decisions
 
 ### Checkpoint
 
-- Complete and present the final book project
+- Final project presentation
 
 ### Project Task
 
@@ -285,12 +279,12 @@ Use a small **Dice Challenge** app (single page, vanilla JS) so students practic
 
   - HCI research input
   - Figma prototype
-  - HTML/CSS/Bootstrap **login page** with Grid/Flexbox-informed layout
-  - JavaScript interactivity (forms / state in the Book app; builds on Module 6 DOM skills)
+  - HTML/CSS/Bootstrap layout
+  - JavaScript interactivity
   - Next.js frontend
   - FastAPI backend
-  - PostgreSQL data storage
-  - GitHub workflow
+  - PostgreSQL storage
+  - GitHub workflow evidence
 
 ### Evidence of Mastery
 

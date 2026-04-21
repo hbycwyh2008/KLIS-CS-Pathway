@@ -1,6 +1,6 @@
 # CS1：各板块 ↔ 项目 / 交付物对照
 
-把「**每个 Module 学生要交什么**」和「**贯穿学期的 Book 项目线**」分开看，排课和评分会清楚很多。详细技能与 checkpoint 仍以 [cs1-course-structure-overview.md](../03-syllabus-schedule/cs1-course-structure-overview.md) 为准。
+把「**每个 Module 学生要交什么**」和「**贯穿学期的 Book 项目线**」分开看，排课和评分会清楚很多。**Canonical module specs:** [CS1-course-structure.md](../CS1-course-structure.md)。扩展 Evidence 与备注：[cs1-course-structure-overview.md](../03-syllabus-schedule/cs1-course-structure-overview.md)。
 
 ---
 
@@ -19,11 +19,11 @@
 | Module | 板块（教什么） | 学生主要项目 / 交付物 | 与 Book 线的关系 |
 |--------|----------------|------------------------|------------------|
 | **1** GitHub Foundations | 仓库、提交、推送、拉取、分支、PR | **个人仓库**至少一次更新；**一次基于分支的贡献 + 一个 PR** | 为后续所有代码作业建立**协作与版本习惯**；Book 代码日后也走同一套流程 |
-| **2** HCI and Figma | 需求发现、访谈/问卷、启发式评估、Figma、设计原则与偏见；**可选：改良现有产品 UI** | **Track A（Book）：** 与 Book 相关的调研 + **迭代 Figma**。**Track B（改良现有 UI）：** 选定真实界面 → **现状 + 启发式评估** → **关键屏 Figma 改良稿** + 设计说明（可与 Book 并行作「热身」，或单独计分） | **Track A** 直接服务 Book 的界面与流程。**Track B** 训练「读旧界面、找问题、改一版」；若选 B，仍建议在后续实现阶段把 **主要精力回到 Book**，避免两条产品线并行过重 |
+| **2** HCI and Figma | needfinding、访谈、问卷、启发式评估、Figma、设计原则与偏见 | **HCI 研究摘要**、**Figma 原型草稿**、**根据发现修订**；checkpoint 含 **一段短设计 rationale** | 为 Book 定用户与界面方向；文末「改良现有 UI」选题可作 **选修扩展** |
 | **3** LaTeX for Technical Communication | 结构化技术写作、一节一页、图或代码块 | **一页 LaTeX**：标题、分节、列表 + **图或代码示例之一**；**短文：设计理由或项目摘要** | 把 Module 2 的设计决策**写成可提交的工程文档**；可与 Book 范围、约束写在一起 |
 | **4** HTML / CSS / Bootstrap | 语义 HTML、CSS、Bootstrap；**整站入口：登录页（静态）** | **响应式登录页（静态）**：标题、账号、密码、按钮 + Bootstrap 排版与样式 | Book 的 **第一版静态前端 = 登录页**；列表/详情等留在 **Next** 阶段实现 |
-| **5** Layout with Grid and Flexbox | 在同一登录页上深化 **12 栅格 + Flexbox**（整页居中、分栏、页眉/页脚细条等） | **仍交同一登录页**：在 M4 基础上用 **Grid + Flex** 重做布局层次与响应式 | 与 Book 线一致：**登录体验**在进全栈前先做到位；不在此模块要求独立「卡片站」或整站多页 |
-| **6** JavaScript DOM Manipulation | DOM、事件、读写输入、动态更新、简单校验、显隐 | **Dice Challenge**（单页、原生 JS）：掷骰、展示结果、至少两项扩展（多骰、求和、重置、数量校验、历史、防连点等）；**可选 stretch**：把同类 DOM 模式用到登录页 | **与 Book 线**：本模块以 **Dice** 为评分主线，降低与 Book 并行的复杂度；进 **Next** 后再做 Book 的交互与表单 |
+| **5** Layout with Grid and Flexbox | 12 栅格、行/列、Flexbox 对齐与居中、选型 | **一段用 Grid 的版面 + 一段用 Flex 的版面**；交付物为 **项目界面的结构化布局**（建立在 M4 静态页之上） | Book 静态界面进入 **可扩展布局**，为 Next 中列表/表单区打基础 |
+| **6** JavaScript DOM Manipulation | DOM、事件、读写输入、动态样式、显隐、简单校验 | **可交互的登录页**，或 **可交互的内容区块**（原生 JS、无框架） | 无框架阶段完成 **表单类交互**；Next 阶段迁移到组件与状态 |
 | **7** Next.js Frontend | 路由、组件、props、表单、`fetch`、展示与提交数据 | **多页 Next 应用** + 组件化 UI；**从后端取数并展示**；**向前端提交数据** | Book 的 **正式前端应用**（列表、表单、与 API 对接） |
 | **8** FastAPI Backend | 路由、JSON、CRUD、请求响应流 | **Book 项目的后端 API**：图书 **CRUD 端点** | Book 的 **业务逻辑与接口契约**（可先内存/临时存储） |
 | **9** PostgreSQL Integration | 表、主键、持久化、API 与数据库关系 | **同一套 Book API**，将存储**换成 PostgreSQL 持久化** | Book 数据 **落库**；与 Module 8 的接口保持一致，只换存储层 |
@@ -36,8 +36,8 @@
 | 阶段 | 建议里程碑（可写进 rubric） |
 |------|------------------------------|
 | M4 结束 | **登录页**静态稿：结构完整、Bootstrap 使用合理、至少两种宽度下可读 |
-| M5 结束 | **同一登录页**：能指出 **Grid**（行/列）与 **Flexbox**（对齐/居中）的分工，整体仍聚焦登录 |
-| M6 结束 | **Dice Challenge** 可演示：事件驱动、DOM 更新清晰；满足课程规定的最低功能条 |
+| M5 结束 | 能展示 **一块 Grid 区** + **一块 Flex 区**，且与项目界面相关 |
+| M6 结束 | **表单类页面**有可演示的交互与基础校验（登录页或指定内容区） |
 | M7 结束 | **Next** 多页、组件化，**与 API 联调**（列表展示 + 至少一类写操作） |
 | M8 结束 | **FastAPI** 完成图书 CRUD，**契约稳定**（可与前端并行时用 mock） |
 | M9 结束 | **PostgreSQL** 持久化；重启服务后数据仍在 |
@@ -45,9 +45,9 @@
 
 ---
 
-## Module 2：「改良现有 UI」选题示例（可选发给学生）
+## Module 2：「改良现有 UI」选题示例（**选修**，可选发给学生）
 
-以下可作为 **Track B** 的**问题域灵感**（任选其一或自拟，只要界面真实可访问、范围可在一个单元内完成）：
+以下可作为 **改良现有界面** 练习的**问题域灵感**（任选其一或自拟，只要界面真实可访问、范围可在一个单元内完成）：
 
 - 免提 / 移动场景下的**音频播放控制**  
 - **流媒体曲库**的管理与整理  
